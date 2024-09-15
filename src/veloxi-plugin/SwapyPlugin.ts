@@ -206,6 +206,7 @@ export const SwapyPlugin: PluginFactory<SwapyConfig, SwapyPluginApi> = (
   function setupItem(item: View) {
     const animation = getAnimation()
     item.styles.position = 'relative'
+    item.styles.transform = 'translate3d(0, 0px, 0px) scale3d(1, 1, 1) rotate(0deg)'
     item.styles.userSelect = 'none'
     item.styles.webkitUserSelect = 'none'
     item.position.setAnimator(animation.animator, animation.config)
